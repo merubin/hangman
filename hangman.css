@@ -24,13 +24,17 @@ p {
   font-weight: bold;
 }
 
+#hint {
+  color:black;
+  text-align:center;
+}
+
 #hangman-container {
   display:flex;
   flex-direction:column;
   justify-content:space-around;
   height:180px;
   width:inherit;
-
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -66,6 +70,9 @@ p {
   font-weight: bold;
   border-bottom: 2px solid black;
   margin-bottom: 10px;
+}
+.wrong-letter {
+  color:red;
 }
 
 
