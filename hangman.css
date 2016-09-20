@@ -4,19 +4,20 @@
 @import url(http://fonts.googleapis.com/css?family=Ruluko);
 
 body{
-  background-image: url="img/schoolsupplies.jpg";
-  height;100%;
+  background-image: url("img/hangman.jpg");
+  background-size:cover;
+  height:100%;
   display:flex;
   flex-direction:column;
-  background:#aaa;
+  /*background:#aaa;*/
   font:300 15px/24px "Open Sans", sans-serif;
   color:#bbb;
-  user-select:none;
+  /*user-select:none;*/
   text-shadow:0 0 1px #aaa;
 }
 p {
   color:black;
-  font-size: 12;
+  font-size: medium;
 }
 
 #header {
@@ -59,7 +60,7 @@ p {
   display:flex;
   flex-direction: row;
   justify-content:space-around;
-  height 600px;
+  height: inherit;;
 }
 
 .correct-letters{
@@ -69,7 +70,7 @@ p {
   text-align: center;
   font-size: xx-large;
   font-weight: bold;
-  border-bottom: 2px solid black;
+  border-bottom: 4px solid black;
   margin-bottom: 10px;
 }
 .wrong-letter {
@@ -79,7 +80,7 @@ p {
 
 .keyboard {
   display:flex;
-  flex-direction:columns;
+  flex-direction:column;
   align-content: center;
 }
 
@@ -130,10 +131,10 @@ p {
 
 }
 #new-game {
-  background:#white;
+  background: white;
   font-weight: bold;
   font-size:large;
-  color:#black;
+  color: black;
   border-radius:4px;
   box-shadow:0 1px 0 #222, inset 0 1px 3px rgba(255,255,255,0.1);
   margin:2px;
