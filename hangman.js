@@ -3,8 +3,8 @@ const  GOODKEY="green";
 const  RESETKEY="#444"
 
 var hangman = {
-    title:$("meta[name='hangman']").attr("title"),
-    list:$("meta[name='hangman']").attr("content").split(','),
+    title:"",
+    list:[],
     curWord:"HANGMAN",
     nextWord: function() { return(hangman.curWord=hangman.list[rndNum(hangman.list.length)-1].toUpperCase())},
     setHangLvl: function(lvl) {
@@ -12,6 +12,9 @@ var hangman = {
         case 0:
           /* new game */
           /* reset game */
+          hangman.game=rndNum($("meta[name='hangman']").length)-1 /* choose which game to play */
+          hangman.title=$("meta[name='hangman']").eq(hangman.game).attr("title"); /* set title for game */
+          hangman.list=$("meta[name='hangman']").eq(hangman.game).attr("content").split(','); /* get list of words */
           hangman.nextWord();
           resetKeys();
           initLetterTray();
@@ -187,8 +190,16 @@ function disableKeyboard (){
       } /* for */
 } /* disableKeyboard */
 
+function createLetterTray(letters) {
+   $("#letter-tray").empty(); /* remove old children */
+   for (var i= 0;i<letters;i++) {
+     $("#letter-tray").append("<div class='correct-letters'></div>")
+    } /* for */
+} /* function createLetterTray */
+
 function newGame() {
   hangman.setHangLvl(0);
+  createLetterTray(hangman.curWord.length);
   $('#new-game').attr("disabled",true);
 }
 

@@ -4,6 +4,7 @@
 @import url(http://fonts.googleapis.com/css?family=Ruluko);
 
 body{
+  background-image: url="img/schoolsupplies.jpg";
   height;100%;
   display:flex;
   flex-direction:column;
