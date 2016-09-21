@@ -5,17 +5,17 @@ Hangman is game in which one player tries to guess the letters of a word. Failed
 
 ### User Stories
 
-As a player, I want start the game by pressing the New Game button.
-As a player, I want to see a splash screen before I start the game.
-As a player, I want to be able to see how many letters are in the word to guess.
-As a player, I want to be able to tell which keys I guessed correct, and which I did not guess correct.
-As a player, I want to be able to use the mouse or the keyboard to select my letters.
-As a player, I want to know when the game is over.
-As a player, I want to know when I win the game.
-As a player, I want to know when I lose the game.
-As a player, I want a hint to help me guess the word.
-As an Author, I want to be able to add content to the game.
-As an Author, I want to add categories of words and graphic backgrounds relating to the words.
+* As a player, I want start the game by pressing the New Game button.
+* As a player, I want to see a splash screen before I start the game.
+* As a player, I want to be able to see how many letters are in the word to guess.
+* As a player, I want to be able to tell which keys I guessed correct, and which I did not guess correct.
+* As a player, I want to be able to use the mouse or the keyboard to select my letters.
+* As a player, I want to know when the game is over.
+* As a player, I want to know when I win the game.
+* As a player, I want to know when I lose the game.
+* As a player, I want a hint to help me guess the word.
+* As an Author, I want to be able to add content to the game.
+* As an Author, I want to add categories of words and graphic backgrounds relating to the words.
 
 ### Technologies Used
 Three main technologies were used to create the Hangman Game.  A web page was developed using HTML, Cascading Style Sheets, or CSS and JavaScript; each do different special jobs.
