@@ -1,0 +1,144 @@
+
+
+@import url(http://fonts.googleapis.com/css?family=Oleo+Script);
+@import url(http://fonts.googleapis.com/css?family=Ruluko);
+
+body{
+  background-image: url("../img/hangman.jpg");
+  background-size:cover;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  font:300 15px/24px "Open Sans", sans-serif;
+  color:#bbb;
+  text-shadow:0 0 1px #aaa;
+}
+p {
+  color:black;
+  font-size: medium;
+}
+
+#header {
+  text-align:center;
+  color:blue;
+  font-weight: bold;
+}
+
+#hint {
+  color:black;
+  text-align:center;
+}
+
+#hangman-container {
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  height:180px;
+  width:inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hangmandemo   {  background-image: url("../img/hangmandemo.gif");}
+.hangman-lvl0 {  background-image: url("../img/hangman0.gif");}
+.hangman-lvl1 {  background-image: url("../img/hangman1.gif");}
+.hangman-lvl2 {  background-image: url("../img/hangman2.gif");}
+.hangman-lvl3 {  background-image: url("../img/hangman3.gif");}
+.hangman-lvl4 {  background-image: url("../img/hangman4.gif");}
+.hangman-lvl5 {  background-image: url("../img/hangman5.gif");}
+.hangman-lvl6 {  background-image: url("../img/hangman6.gif");}
+
+
+
+#letter-container {
+  margin:3px;
+  padding:2px;
+
+}
+#letter-tray {
+  display:flex;
+  flex-direction: row;
+  justify-content:space-around;
+  height: inherit;;
+}
+
+.correct-letters{
+  height:30px;
+  width:60px;
+  color:black;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+  border-bottom: 4px solid black;
+  margin-bottom: 10px;
+}
+.wrong-letter {
+  color:red;
+}
+
+
+.keyboard {
+  display:flex;
+  flex-direction:column;
+  align-content: center;
+}
+
+#key-buttons{
+  display:flex;
+  flex-direction:column;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.keyboard-row {
+  display:flex;
+  flex-direction:row;
+  margin:0 auto 7px;
+  height:auto;
+  width:auto;
+}
+
+.key {
+  background:#444;
+  color:#eee;
+  border-radius:4px;
+  box-shadow:0 1px 0 #222, inset 0 1px 3px rgba(255,255,255,0.1);
+  margin:2px;
+  transition:0.1s;
+  align-items:center;
+  align-content:center;
+  height:30px;
+  width:30px;
+  border:2px solid rgba(0,0,0,0.08);
+  cursor:pointer;
+}
+
+.key .wrong {
+  color:white;
+  background-color:red;
+}
+
+
+#game-buttons {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:inherit;
+  padding-top:5px;
+
+
+}
+#new-game {
+  background: white;
+  font-weight: bold;
+  font-size:large;
+  color: black;
+  border-radius:4px;
+  box-shadow:0 1px 0 #222, inset 0 1px 3px rgba(255,255,255,0.1);
+  margin:2px;
+  transition:0.1s;
+  height:60px;
+  width:100px;
+  border:2px solid rgba(0,0,0,0.08);
+  cursor:pointer;
+}
