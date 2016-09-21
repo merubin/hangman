@@ -65,6 +65,6 @@ This project is licensed under the MIT License.
 
 ## Acknowledgments
 
-* Thank you to my teachers, Jesse Shawl, Nick Olds, and Adrain Maseda who after only three weeks of classes enough wisdom to be able to create this program.
+* Thank you to my teachers, Jesse Shawl, Nick Olds, and Adrain Maseda who after only three weeks of classes have given me enough wisdom through their teachings, to be able to create this program.
 * I want to thank those students of WDI-12 for their Inspiration and good words to make this program a success.
 * I want to thank Apple Computer company for making my mac!
